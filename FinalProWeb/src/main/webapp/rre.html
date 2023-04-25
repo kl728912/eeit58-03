@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>最新消息</title>
+  <!-- Boostrap 導入程式 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+          crossorigin="anonymous"></script>
+  <!-- 中文字型樣式 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&family=Noto+Sans+JP:wght@700&family=Noto+Sans+TC:wght@900&display=swap"
+          rel="stylesheet">
+  <!-- 連結CSS外部檔案 -->
+
+  <link rel="stylesheet" href="./css/navbar&footer.css">
+
+  <!-- MDB頭像 -->
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+
+    #articles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .article {
+      width: 400px;
+      height: 400px;
+      margin: 20px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 16px;
+    }
+
+    .article img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+
+    .card {
+
+      height: 470px;
+
+      margin: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .card img {
+      height: 15rem;
+      object-fit: cover;
+    }
+
+    .card-text {
+      height: 100px;
+      overflow: hidden;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+  </style>
+</head>
+</head>
+
+<body>
+
+
+<!-- 導覽列 -->
+<div class="wrapper">
+  <header class="main-header">
+    <div class="container">
+      <a href="./index.html" class="Logo">
+        <img src="./Images/logo3.png" alt="Logo" width="30" height="36">
+        <h2>Join</h2>
+      </a>
+      <!-- 導覽列文字 -->
+      <nav class="navbar-text">
+        <a href="./latestNews.html">最新消息</a>
+        <a href="./findGym.html">附近場館</a>
+        <a href="./post.html">發起揪團</a>
+        <a href="./joinTeam.html">加入報團</a>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <!-- Avatar頭像 -->
+            <li class="nav-item Avatar dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#"
+                 id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown"
+                 aria-expanded="false">
+                <img src="./Images/user.png" class="rounded-circle" width="50" height="50"
+                     alt="Portrait of a Woman" loading="lazy" />
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#">登入</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">個人資訊</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- news start -->
+  <h1>最新消息</h1>
+  <div class="filter-container">
+    <div id="articles"></div>
+  </div>
+  <!-- news end -->
+
+  <!-- footer頁尾 -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>更多</h4>
+        <ul>
+          <li><a href="#">顧客服務</a></li>
+          <li><a href="#">人才招募</a></li>
+          <li><a href="#">網頁資訊</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>幫助</h4>
+        <ul>
+          <li><a href="#">社群守則</a></li>
+          <li><a href="#">常見問題</a></li>
+          <li><a href="#">使用者指南</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>聯絡我們</h4>
+        <ul>
+          <li><a href="#">加入我們</a></li>
+          <li><a href="#">會員服務</a></li>
+          <li><a href="#">企業報團</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>關於我們</h4>
+        <ul>
+          <li><a href="#">我們的故事</a></li>
+          <li><a href="#">客服信箱</a></li>
+          <li><a href="#">社群媒體</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  //初始化
+  const apiKey = 'bc51162017a3456ba650a03ba73b37d2';
+  const apiUrl = `https://newsapi.org/v2/everything?q=羽球&apiKey=${apiKey}`;
+  const articlesDiv = document.getElementById('articles');
+
+  //接收news api 遍歷所有羽球新聞
+  fetch(apiUrl)
+          .then(response => response.json())
+          .then(data => {
+            data.articles.forEach(article => {
+              const {title, description, url, urlToImage} = article;
+
+              if (urlToImage === null || urlToImage === "https://s.yimg.com/cv/apiv2/social/images/yahoo_default_logo-1200x1200.png") {
+                return; // Skip所有 null 跟 yahoo default圖
+              }
+              const keyword = "羽球";
+              if (!article.title.toLowerCase().includes(keyword) && !article.description.toLowerCase().includes(keyword)) {
+                return; // skip掉所有標題或內容沒羽球關鍵字的文章
+              }
+              //渲染所有news卡片 aka append地獄
+              const articleDiv = document.createElement('div');
+              articleDiv.classList.add('card');
+              articleDiv.style.width = '24rem';
+
+              articleDiv.innerHTML = `
+        <img src="${urlToImage}" class="card-img-top" alt="${title}">
+        <div class="card-body">
+          <h5 class="card-title">${title}</h5>
+          <p class="card-text">${description}</p>
+          <a href="${url}" class="btn btn-primary" target="_blank">看更多</a>
+        </div>
+      `;
+
+              articlesDiv.appendChild(articleDiv);
+            });
+          })
+          .catch(error => console.error(error));
+
+</script>
+
+</body>
+
+</html>

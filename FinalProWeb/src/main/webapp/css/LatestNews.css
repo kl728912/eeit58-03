@@ -1,0 +1,12 @@
+.latestNews-container{
+    display: flex;
+    width: 100%;
+}
+.latestNews-group{
+    margin: 10px;
+    width: 100%;
+    
+}
+.latestNews-group img{
+    width: 100%;
+}

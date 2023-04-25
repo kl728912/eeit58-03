@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="FinalProWeb:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>FinalProWeb</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="FinalProWeb-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="FinalProWeb:war exploded" />
+    </root>
+  </artifact>
+</component>
